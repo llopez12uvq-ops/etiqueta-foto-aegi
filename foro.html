@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foro de presentación</title>
+<style>
+:root{
+  --acento:#1cabe2;
+  --acento-oscuro:#1189bb;
+  --celeste-suave:#dff3fb;
+  --amarillo:#f3b229;
+  --texto:#1f2a37;
+  --texto-suave:#4f6272;
+  --borde:#d6e8f2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  padding:18px;
+  background:#eef7fb;
+  font-family:"Aptos","Segoe UI",Arial,sans-serif;
+  color:var(--texto);
+}
+.foro-etiqueta{
+  max-width:1050px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:20px;
+  align-items:center;
+  padding:22px 24px;
+  border:1px solid var(--borde);
+  border-left:8px solid var(--acento);
+  border-radius:22px;
+  background:
+    radial-gradient(circle at 92% 15%,rgba(28,171,226,.11) 0 12%,transparent 12.5%),
+    linear-gradient(135deg,#ffffff,#f4fbfe);
+  box-shadow:0 10px 26px rgba(29,78,110,.10);
+}
+.icono{
+  display:grid;
+  place-items:center;
+  width:66px;
+  height:66px;
+  border-radius:20px;
+  background:var(--celeste-suave);
+  font-size:32px;
+}
+.contenido h2{
+  margin:0 0 8px;
+  color:#0f2535;
+  font-size:25px;
+  line-height:1.1;
+}
+.contenido p{
+  margin:0;
+  color:var(--texto-suave);
+  font-size:16px;
+  line-height:1.6;
+}
+.contenido strong{color:var(--texto)}
+.boton{
+  display:inline-block;
+  padding:12px 19px;
+  border-radius:999px;
+  background:var(--acento);
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:800;
+  white-space:nowrap;
+  box-shadow:0 8px 18px rgba(28,171,226,.22);
+}
+.boton:hover{background:var(--acento-oscuro)}
+.detalle{
+  display:inline-block;
+  margin-top:10px;
+  padding:5px 9px;
+  border-radius:999px;
+  background:#fff4d4;
+  color:#775018;
+  font-size:12px;
+  font-weight:700;
+}
+@media(max-width:760px){
+  .foro-etiqueta{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .icono{margin:0 auto}
+  .boton{justify-self:center}
+}
+</style>
+</head>
+<body>
+  <section class="foro-etiqueta">
+    <div class="icono" aria-hidden="true">💬</div>
+
+    <div class="contenido">
+      <h2>Foro de presentación</h2>
+      <p>
+        Les propongo que se presenten brevemente y compartan desde qué
+        <strong>trayectorias, experiencias e intereses</strong> se acercan a la materia.
+        Para cerrar su intervención, completen la frase:
+        <strong>“Cuando pienso en la organización o la gestión de una institución educativa, me interesa especialmente…”</strong>
+      </p>
+      <span class="detalle">Leé también las presentaciones del grupo y participá del intercambio</span>
+    </div>
+
+    <a class="boton" href="https://qoodle.uvq.edu.ar/mod/forum/view.php?id=1931235" target="_blank" rel="noopener noreferrer">Participar en el foro →</a>
+  </section>
+</body>
+</html>
